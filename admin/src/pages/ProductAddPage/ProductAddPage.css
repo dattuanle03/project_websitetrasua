@@ -1,0 +1,86 @@
+﻿.product-add-container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 36px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-add-container:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-add-container h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #222;
+  font-size: 26px;
+}
+
+.product-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-add-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-add-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 15px;
+}
+
+.product-add-form input[type="text"],
+.product-add-form input[type="number"],
+.product-add-form input[type="file"],
+.product-add-form textarea,
+.product-add-form select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.product-add-form input:focus,
+.product-add-form textarea:focus,
+.product-add-form select:focus {
+  border-color: #00aaff;
+  background-color: #fff;
+  outline: none;
+}
+
+.product-add-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.product-add-form button {
+  background: linear-gradient(135deg, #00bfff, #007bff);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-add-form button:hover {
+  background: linear-gradient(135deg, #009fe3, #0056b3);
+  transform: translateY(-1px);
+}

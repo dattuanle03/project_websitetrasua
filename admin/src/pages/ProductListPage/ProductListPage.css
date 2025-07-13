@@ -1,0 +1,120 @@
+﻿.product-list {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.product-list__title {
+  text-align: center;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.product-list__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-list__table th,
+.product-list__table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.product-list__table th {
+  background-color: #f2f2f2;
+  color: #444;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.product-list__table td:nth-child(3),
+.product-list__table td:nth-child(6),
+.product-list__table td:nth-child(7) {
+  white-space: nowrap;
+}
+
+.product-list__image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-list__button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.product-list__button--delete {
+  background-color: #dc3545;
+}
+
+.product-list__button--delete:hover {
+  background-color: #c82333;
+}
+
+.product-list__button--edit {
+  background-color: #007bff;
+}
+
+.product-list__button--edit:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Pagination Style ===== */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 4px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.pagination button.active {
+  background-color: #1677ff;
+  color: white;
+  font-weight: bold;
+}
+.product-list__search {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.product-list__search input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}

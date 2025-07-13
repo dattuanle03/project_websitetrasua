@@ -1,0 +1,58 @@
+﻿.slider-wrapper {
+  margin: 10px auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.slider-title {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  color: white;
+  font-size: 28px;
+  text-shadow: 1px 1px 5px #000;
+  max-width: 90%;
+}
+
+/* ✅ Responsive cho mobile */
+@media (max-width: 768px) {
+  .slider-image {
+    max-height: 400px;
+  }
+
+  .slider-title {
+    font-size: 18px;
+    bottom: 16px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-image {
+    max-height: 300px;
+  }
+
+  .slider-title {
+    font-size: 16px;
+    bottom: 12px;
+    left: 16px;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
